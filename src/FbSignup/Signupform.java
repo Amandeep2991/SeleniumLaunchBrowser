@@ -1,4 +1,9 @@
+// this is for old facebook account 
+
+
 package FbSignup;
+
+import java.sql.Driver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,11 +21,11 @@ public class Signupform {
 		
 		//for locators username
 		
-		WebElement firstname=driver.findElement(By.cssSelector("input[name='firstname']"));
+		WebElement firstname= driver.findElement(By.name("firstname"));
 		firstname.sendKeys("Amandeep");
 		
 		// FOR SURNAME USING NAME LOCATOR
-		WebElement lastname= driver.findElement(By.cssSelector("Input[name='lastname']"));
+		WebElement lastname= driver.findElement(By.name("lastname"));
 		lastname.sendKeys("Thakur");
 		
 		//for email address using id loctor tagname#IDvalue
